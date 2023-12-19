@@ -72,7 +72,7 @@ gyb --email john.smith@domain.com --action backup --service-account
 ## Drive Data Handling
 
 {: .important}
-> ***If after this, the users account still shows drive storage quota being used, it's likely they have backed up their computer directories using the gogole drive dekstop app function. I don't have a good methodology for dealing with this at the moment.***
+If after this, the users account still shows drive storage quota being used, it's likely they have backed up their computer directories using the gogole drive dekstop app function. I don't have a good methodology for dealing with this at the moment.
 
 ### 1. Create a Google Shared Drive for the offboarded user.
 
@@ -88,8 +88,8 @@ This can be easily done with:
 ```sh
 gam user you@domain.com create teamdrive "Offboarded User - John Smith (john.smith) - 2023-01-01" adminmanagedrestrictions true asadmin
 ```
-
-***Be sure to grab the Teamdrive ID, it's a string of random characters output after the generation.***
+{: .important}
+Be sure to grab the Teamdrive ID, it's a string of random characters output after the generation.
 
 #### Add the offboarded user as a manager.
 
@@ -99,7 +99,8 @@ gam add drivefileacl TEAM_DRIVE_ID_HERE user john.smith@domain.com role organize
 
 ### 2. Move Data from the user ***"My Drive"*** to the ***"Share Drive"***.
 
-***This will retain all the document level IDs and sharing settings, though you will lose directory based sharing (a la, if the user shared a whole folder, that access will be lost).***
+{: .warning}
+This will retain all the document level IDs and sharing settings, though you will lose directory based sharing (a la, if the user shared a whole folder, that access will be lost).
 
 ```sh
 gam user john.smith@domain.com move drivefile root teamdriveparentid TEAM_DRIVE_ID_HERE mergewithparent duplicatefolders merge createshortcutsfornonmovablefiles
