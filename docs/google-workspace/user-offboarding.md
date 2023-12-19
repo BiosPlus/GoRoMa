@@ -71,9 +71,7 @@ gyb --email john.smith@domain.com --action backup --service-account
 
 ## Drive Data Handling
 
-> {: .important}
-> 📘 **Note!**
-> 
+{: .important}
 > ***If after this, the users account still shows drive storage quota being used, it's likely they have backed up their computer directories using the gogole drive dekstop app function. I don't have a good methodology for dealing with this at the moment.***
 
 ### 1. Create a Google Shared Drive for the offboarded user.
