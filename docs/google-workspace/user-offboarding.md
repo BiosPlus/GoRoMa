@@ -9,11 +9,15 @@ parent: Google Workspace
 The common methodology in Microsoft 365 environments from my experience seems to be to convert a user account into a shared mailbox and deal out access to other users. Google doesn't offer that same functionality and their migration tool isn't great if someones position/data needs to be split among multiple successors.
 {: .fs-6 .fw-300 }
 
+---
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+---
 
 ### Requirements:
 

@@ -10,6 +10,8 @@ parent: Google Workspace
 Easy to spin up dynamic groups which will recalcuate membership based on parameters set. No more manually adding new users to groups!
 {: .fs-6 .fw-300 }
 
+---
+
 {: .highlight}
 Always make sure to exclude suspended users. Don't need any bounceback. Though if you want suspended users for some reason, just remove `&& user.suspended == false` from the end of each query
 
