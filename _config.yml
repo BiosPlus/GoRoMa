@@ -2,7 +2,27 @@ title: GoRoMa
 description: Quick and easy configuration options intended for administators of workspaces which utilise Google Workspace, MacOS, and Remotely Operate.
 theme: just-the-docs
 
-url: https://biosplus.github.io/GoRoMa/
+url: https://biosplus.github.io/goroma/
 
 aux_links:
   Template Repository: https://github.com/biosplus/GoRoMa
+
+# Search
+search_enabled: true
+search:
+  heading_level: 4
+  previews: 5
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: true
+
+# Github links
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/biosplus/goroma"
+gh_edit_branch: "main"
+
+back_to_top: true
+back_to_top_text: "Back to top"
