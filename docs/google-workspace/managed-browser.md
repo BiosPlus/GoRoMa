@@ -3,17 +3,20 @@ layout: default
 title: Google Chrome - Managed Browser Settings
 parent: Google Workspace
 ---
+# Google Chrome - Managed Browser Settings
+{: .no_toc }
 
-A set of browser configurations which can be managed via the Google Workspace Admin Console
+A set of browser configurations which can be managed via the Google Workspace Admin Console (or Group Policy if you're brave enough)
 {: .fs-6 .fw-300 }
 
-
 ## Table of Contents
-{: .no_toc }
+{: .no_toc .text-delta }
+
+- TOC
+{:toc}
 
 ---
 ### Browser Reporting
-{:toc}
 
 If you're managing a Google Workspace instance/tenancy, you'll want this turned on as it sends logs to your audit and investigation log tool. 3 hours is the fastest frequency.
 
