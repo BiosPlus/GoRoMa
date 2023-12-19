@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chrome - Managed Browser Settings
+title: Google Chrome - Managed Browser Settings
 parent: Google Workspace
 ---
 
