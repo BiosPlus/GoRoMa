@@ -9,6 +9,9 @@ The common methodology in Microsoft 365 environments from my experience seems to
 ## Table of Contents
 {: .no_toc .text-delta }
 
+1. TOC
+{:toc}
+
 ### Requirements:
 
 - Got Your Back ([Github](https://github.com/GAM-team/got-your-back)) - @GAM-team
