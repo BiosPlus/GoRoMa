@@ -20,8 +20,8 @@ A set of browser configurations which can be managed via the Google Workspace Ad
 
 If you're managing a Google Workspace instance/tenancy, you'll want this turned on as it sends logs to your audit and investigation log tool. 3 hours is the fastest frequency.
 
-| Policy | Setting | Shortcode | URL |
-|---|-----|----------|-|
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
 | Managed browser reporting | Enabled managed browser cloud reporting | CloudReportingEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/cloud_reporting) |
 | Managed browser reporting upload frequency | 3 hours | CloudReportingUploadFrequency | [Link](https://admin.google.com/ac/chrome/settings/user/details/cloud_reporting_upload_frequency_category_item) |
 
@@ -29,8 +29,8 @@ If you're managing a Google Workspace instance/tenancy, you'll want this turned 
 
 Better user experience.
 
-| Policy | Setting | Shortcode | URL |
-|---|-----|----------|-|
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
 | Show "Always Open" checkbox in external protocol dialog | User may select "Always allow" to skip all future confirmation prompts | ExternalProtocolDialogShowAlwaysOpenCheckbox | [Link](https://admin.google.com/ac/chrome/settings/user/details/external_protocol_dialog_show_always_open_checkbox_category_item) |
 
 ### Chrome Updates
@@ -40,8 +40,8 @@ The goals here are simply:
 - Have Chrome check every 60 mins to see if there's an update.
 - Use a friendly endpoint for checking (cacheable url).
 
-| Policy | Setting | Shortcode | URL |
-|---|-----|----------|-|
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
 | Configuration | Show notification recommending relaunch |  | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
 | Time Period (hours) | 24 | RelaunchHeadsUpPeriod | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
 | Initial quiet period (hours) | 1 | RelaunchNotification | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
@@ -54,8 +54,8 @@ The goals here are simply:
 
 This is in aid of restricting possible avenues for scammers to get into user workstations. I imagine every org has a desired and standard means of conducting remote support.
 
-| Policy | Setting | Shortcode | URL |
-|---|-----|----------|-|
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
 | Firewall Traversal | Disable firewall traversal | RemoteAccessHostFirewallTraversal| [Link](https://admin.google.com/ac/chrome/settings/user/details/remote_access_host_firewall_traversal_category_item) |
 | Remote support connections | Prevent remote support connections | RemoteAccessHostAllowRemoteSupportConnections | [Link](https://admin.google.com/ac/chrome/settings/user/details/remote_access_host_allow_remote_support_connections_setting_group) |
 | Enterprise remote support connections | Prevent remote support connections from enterprise admins | RemoteAccessHostAllowEnterpriseRemoteSupportConnections | [Link](https://admin.google.com/ac/chrome/settings/user/details/remote_access_host_allow_enterprise_remote_support_connections_setting_group) |
@@ -64,16 +64,16 @@ This is in aid of restricting possible avenues for scammers to get into user wor
 
 I believe that every org should have a centralised password solution (see: Bitwarden, 1Password, etc), hence it makes sense to reduce the chance of passwords stored in unknown locations.
 
-| Policy | Setting | Shortcode | URL |
-|---|-----|----------|-|
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
 | Password Manager | Never allow the use of password manager | PasswordManagerEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/password_manager) | 
 
 ### Other Settings
 
 The logs that are sent are entirely anonymized and are extremely useful for helping the chromium team resolve issues. I believe there is value in turning this on if you're a workspace customer.
 
-| Policy | Setting | Shortcode | URL |
-|---|-----|----------|-|
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
 | Metrics Reporting | Send anonymous reports of usage and crash-related data to Google | MetricsReportingEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/metrics_reporting_enabled_category_item) |
 
 ### URL Blocking
