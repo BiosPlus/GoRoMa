@@ -26,7 +26,7 @@ The best approach to combat this is to use Nudge.
 
 ```
 {% capture nudge_mobileconfig %}
-{% include_relative resources/macOS/Nudge/nudge-macos.mobileconfig %}
+{% include_relative resources/nudge-macos.mobileconfig %}
 {% endcapture %}
 
 {{ nudge_mobileconfig }}
