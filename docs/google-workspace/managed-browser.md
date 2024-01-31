@@ -9,6 +9,8 @@ parent: Google Workspace
 A set of browser configurations which can be managed via the Google Workspace Admin Console (or Group Policy if you're brave enough)
 {: .fs-6 .fw-300 }
 
+A quick heads up, I refer to things as "Shortcodes" in here, though their actual name is "Preference Names".
+
 ---
 
 ## Table of Contents
