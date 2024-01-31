@@ -31,5 +31,14 @@ The best approach to combat this is to use Nudge.
 ```xml
 {{ nudge_mobileconfig }}```
 
+```filename: nudge-macos-web.mobileconfig```
+
+{% capture nudge_mobileconfig_web %}
+{% include_relative resources/nudge-macos-web.mobileconfig %}
+{% endcapture %}
+
+```xml
+{{ nudge_mobileconfig_web }}```
+
 ## MacOS 14+ (Sonoma and newer)
 
