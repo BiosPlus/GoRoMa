@@ -21,9 +21,35 @@ The best approach to combat this is to use Nudge.
     - Keep in mind, deploy this to a device group in your MDM where you can set a conditional rule wherin the OS version is older than 14.0 for application.
 - Create a policy to enforce updates via Nudge, or use my existing web JSON based policy. Both are listed below (as of 2024-01-31):
 
+
+### Option One: The all-in-one (AIO) Nudge mobileconfig file
+
+This works on the basis that you deploy a mobileconfig file macs with a full configuration.
+
+<details>
+    <summary>Click to expand - Nudge MacOS .MobileConfig file</summary>
 ```xml
 {% include_relative resources/nudge-macos.mobileconfig %}
 ```
+</details>
+
+### Option Two: The web based Nudge configuration.
+
+This works on the basis that you deploy a mobileconfig file macs telling them where the actual configuration source is hosted. In this case, on github as a raw file.
+
+<details>
+    <summary>Click to expand - Nudge MacOS Web .MobileConfig file</summary>
+```xml
+{% include_relative resources/nudge-macos-web.mobileconfig %}
+```
+</details>
+
+<details>
+    <summary>Click to expand - Self Hostable JSON file</summary>
+```json
+{% include_relative resources/com.github.macadmins.Nudge.json %}
+```
+</details>
 
 ## MacOS 14+ (Sonoma and newer)
 
