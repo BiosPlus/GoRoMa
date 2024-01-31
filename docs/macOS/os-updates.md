@@ -24,35 +24,23 @@ The best approach to combat this is to use Nudge.
 
 ### Option One: The all-in-one (AIO) Nudge mobileconfig file
 
-This works on the basis that you deploy a mobileconfig file macs with a full configuration.
+This works on the basis that you deploy a mobileconfig file macs with a full configuration. I apologise, I'd make this a collapsed section but it totally breaks the formatting.
 
-<details>
-    <summary>Click to expand - Nudge MacOS .MobileConfig file</summary>
-
-```
+```xml
 {% include_relative resources/nudge-macos.mobileconfig %}
 ```
-</details>
 
 ### Option Two: The web based Nudge configuration.
 
 This works on the basis that you deploy a mobileconfig file macs telling them where the actual configuration source is hosted. In this case, on github as a raw file.
 
-<details>
-    <summary>Click to expand - Nudge MacOS Web .MobileConfig file</summary>
-
 ```xml
 {% include_relative resources/nudge-macos-web.mobileconfig %}
 ```
-</details>
-
-<details>
-    <summary>Click to expand - Self Hostable JSON file</summary>
 
 ```json
 {% include_relative resources/com.github.macadmins.Nudge.json %}
 ```
-</details>
 
 ## MacOS 14+ (Sonoma and newer)
 
