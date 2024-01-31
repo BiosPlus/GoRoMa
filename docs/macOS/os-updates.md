@@ -24,29 +24,27 @@ The best approach to combat this is to use Nudge.
 
 ```filename: nudge-macos.mobileconfig```
 
-
-
-<details>
-    <summary>Click to expand/collapse codeblock</summary>
-    ```
-    {% capture nudge_mobileconfig %}
-    {% include_relative resources/nudge-macos.mobileconfig %}
-    {% endcapture %}
-    {{ nudge_mobileconfig }}
-    ```
-</details>
-
-```filename: nudge-macos-web.mobileconfig```
+{% capture nudge_mobileconfig %}
+{% include_relative resources/nudge-macos.mobileconfig %}
+{% endcapture %}
 
 <details>
-    <summary>Click to expand/collapse codeblock</summary>
+    <summary>Click to expand/collapse</summary>
+
+    ```markdown
+    ```xml
+    {{ nudge_mobileconfig }}```
     ```
-    {% capture nudge_mobileconfig_web %}
-    {% include_relative resources/nudge-macos-web.mobileconfig %}
-    {% endcapture %}
-    {{ nudge_mobileconfig_web }}
-    ```
+
 </details>
+{% capture nudge_mobileconfig_web %}
+{% include_relative resources/nudge-macos-web.mobileconfig %}
+{% endcapture %}
+
+    ```filename: nudge-macos-web.mobileconfig```
+
+    ```xml
+    {{ nudge_mobileconfig_web }}```
 
 ## MacOS 14+ (Sonoma and newer)
 
