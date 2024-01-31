@@ -23,12 +23,10 @@ The best approach to combat this is to use Nudge.
 - Create a policy to enforce updates via Nudge, or use my existing web JSON based policy. Both are listed below (as of 2024-01-31):
 
 ```filename: nudge-macos.mobileconfig```
-
-```
 {% capture nudge_mobileconfig %}
 {% include_relative resources/nudge-macos.mobileconfig %}
 {% endcapture %}
-
+```xml
 {{ nudge_mobileconfig }}
 
 ```
