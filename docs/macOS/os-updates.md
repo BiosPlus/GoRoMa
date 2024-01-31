@@ -31,7 +31,8 @@ The best approach to combat this is to use Nudge.
 <details>
     <summary>Click to expand/collapse codeblock</summary>
     ```xml
-    {{ nudge_mobileconfig }}```
+    {{ nudge_mobileconfig }}
+    ```
 </details>
 
 {% capture nudge_mobileconfig_web %}
@@ -43,7 +44,8 @@ The best approach to combat this is to use Nudge.
 <details>
     <summary>Click to expand/collapse codeblock</summary>
     ```xml
-    {{ nudge_mobileconfig_web }}```
+    {{ nudge_mobileconfig_web }}
+    ```
 </details>
 
 ## MacOS 14+ (Sonoma and newer)
