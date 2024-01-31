@@ -28,7 +28,8 @@ This works on the basis that you deploy a mobileconfig file macs with a full con
 
 <details>
     <summary>Click to expand - Nudge MacOS .MobileConfig file</summary>
-```xml
+
+```
 {% include_relative resources/nudge-macos.mobileconfig %}
 ```
 </details>
@@ -39,6 +40,7 @@ This works on the basis that you deploy a mobileconfig file macs telling them wh
 
 <details>
     <summary>Click to expand - Nudge MacOS Web .MobileConfig file</summary>
+
 ```xml
 {% include_relative resources/nudge-macos-web.mobileconfig %}
 ```
@@ -46,6 +48,7 @@ This works on the basis that you deploy a mobileconfig file macs telling them wh
 
 <details>
     <summary>Click to expand - Self Hostable JSON file</summary>
+
 ```json
 {% include_relative resources/com.github.macadmins.Nudge.json %}
 ```
