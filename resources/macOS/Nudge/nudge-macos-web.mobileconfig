@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>json-url</key>
+				<string>https://raw.githubusercontent.com/BiosPlus/Pub-Files/main/Configuration%20Files/Nudge/com.github.macadmins.Nudge.json</string>
+				<key>PayloadDisplayName</key>
+				<string>Nudge - Web Based Configuration</string>
+				<key>PayloadIdentifier</key>
+				<string>com.github.macadmins.Nudge.6b24ac33-58a1-498e-83d3-c7d1ed5b13ee</string>
+				<key>PayloadType</key>
+				<string>com.github.macadmins.Nudge</string>
+				<key>PayloadUUID</key>
+				<string>667f67fe-fe4f-4eaa-baee-d2f79bc45abd</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string>Configures Nudge application</string>
+		<key>PayloadDisplayName</key>
+		<string>Nudge</string>
+		<key>PayloadIdentifier</key>
+		<string>com.github.macadmins.Nudge</string>
+		<key>PayloadOrganization</key>
+		<string>Nudge</string>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>da7df25d-570c-4fc8-9cbe-cce36dd5ad37</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

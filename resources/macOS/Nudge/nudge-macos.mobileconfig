@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Configures all Nudge preferences</string>
+			<key>PayloadDisplayName</key>
+			<string>Nudge Preferences</string>
+			<key>PayloadIdentifier</key>
+			<string>com.github.macadmins.Nudge.preferences</string>
+			<key>PayloadType</key>
+			<string>com.github.macadmins.Nudge</string>
+			<key>PayloadUUID</key>
+			<string>22E1DE5C-384D-46C1-ADEA-06DA06EDD948</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>optionalFeatures</key>
+			<dict>
+				<key>acceptableCameraUsage</key>
+				<true/>
+				<key>acceptableScreenSharingUsage</key>
+				<true/>
+				<key>aggressiveUserExperience</key>
+				<true/>
+				<key>aggressiveUserFullScreenExperience</key>
+				<true/>
+				<key>asynchronousSoftwareUpdate</key>
+				<true/>
+				<key>attemptToFetchMajorUpgrade</key>
+				<true/>
+				<key>enforceMinorUpdates</key>
+				<true/>
+			</dict>
+			<key>osVersionRequirements</key>
+			<array>
+				<dict>
+					<key>aboutUpdateURLs</key>
+					<array>
+						<dict>
+							<key>_language</key>
+							<string>en</string>
+							<key>aboutUpdateURL</key>
+							<string>https://support.apple.com/en-us/HT213268</string>
+						</dict>
+					</array>
+					<key>requiredInstallationDate</key>
+					<date>2023-11-30T00:00:01Z</date>
+					<key>requiredMinimumOSVersion</key>
+					<string>14.1.1</string>
+				</dict>
+			</array>
+			<key>userExperience</key>
+			<dict>
+				<key>allowGracePeriods</key>
+				<false/>
+				<key>allowedDeferrals</key>
+				<integer>24</integer>
+				<key>allowedDeferralsUntilForcedSecondaryQuitButton</key>
+				<integer>5</integer>
+				<key>approachingRefreshCycle</key>
+				<integer>6000</integer>
+				<key>approachingWindowTime</key>
+				<integer>72</integer>
+				<key>elapsedRefreshCycle</key>
+				<integer>300</integer>
+				<key>gracePeriodInstallDelay</key>
+				<integer>23</integer>
+				<key>gracePeriodLaunchDelay</key>
+				<integer>1</integer>
+				<key>gracePeriodPath</key>
+				<string>/private/var/db/.AppleSetupDone</string>
+				<key>imminentRefreshCycle</key>
+				<integer>600</integer>
+				<key>imminentWindowTime</key>
+				<integer>24</integer>
+				<key>initialRefreshCycle</key>
+				<integer>18000</integer>
+				<key>noTimers</key>
+				<false/>
+				<key>randomDelay</key>
+				<false/>
+			</dict>
+			<key>userInterface</key>
+			<dict>
+				<key>fallbackLanguage</key>
+				<string>en</string>
+				<key>forceFallbackLanguage</key>
+				<true/>
+				<key>forceScreenShotIcon</key>
+				<false/>
+				<key>iconDarkPath</key>
+				<string>/tmp/nudge/appleRainbow.png</string>
+				<key>iconLightPath</key>
+				<string>/tmp/nudge/appleRainbow.png</string>
+				<key>screenShotDarkPath</key>
+				<string>/tmp/nudge/updateDark.png</string>
+				<key>screenShotLightPath</key>
+				<string>/tmp/nudge/updateLight.png</string>
+				<key>showDeferralCount</key>
+				<true/>
+				<key>simpleMode</key>
+				<false/>
+				<key>singleQuitButton</key>
+				<true/>
+				<key>updateElements</key>
+				<array>
+					<dict>
+						<key>_language</key>
+						<string>en</string>
+						<key>actionButtonText</key>
+						<string>Update Device</string>
+						<key>customDeferralButtonText</key>
+						<string>Choose a date/time</string>
+						<key>customDeferralDropdownText</key>
+						<string>Remind me in:</string>
+						<key>informationButtonText</key>
+						<string>More Info</string>
+						<key>mainContentHeader</key>
+						<string>Your device will restart during this update</string>
+						<key>mainContentNote</key>
+						<string>Important Notes</string>
+						<key>mainContentSubHeader</key>
+						<string>Updates can take around 15-25 minutes to complete</string>
+						<key>mainContentText</key>
+						<string>A fully up-to-date device is required to ensure that we can protect our data.
+
+If you do not update by the due date, you will effectively be locked out of your system until you complete the update.
+
+While the update has been rigorously tested it's advised you do this as soon as possible to avoid any downtime, as well as help us find any issues early on with the update.
+
+To begin the update, simply click on the Update Device button and follow the prompts.
+
+For more information, hit *More Info* in the bottom left corner of this window.</string>
+						<key>mainHeader</key>
+						<string>Your device requires a macOS Security Update</string>
+						<key>primaryQuitButtonText</key>
+						<string>Later</string>
+						<key>secondaryQuitButtonText</key>
+						<string>I understand</string>
+						<key>subHeader</key>
+						<string>A friendly reminder from your tech team</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Configures Nudge application</string>
+	<key>PayloadDisplayName</key>
+	<string>Nudge - Configuration</string>
+	<key>PayloadIdentifier</key>
+	<string>com.github.macadmins.Nudge</string>
+	<key>PayloadOrganization</key>
+	<string>Nudge</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>72F11FEE-ABB3-4FF6-870A-A55BC53669EB</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
