@@ -28,17 +28,23 @@ The best approach to combat this is to use Nudge.
 {% include_relative resources/nudge-macos.mobileconfig %}
 {% endcapture %}
 
-```xml
-{{ nudge_mobileconfig }}```
-
-```filename: nudge-macos-web.mobileconfig```
+<details>
+    <summary>Click to expand/collapse codeblock</summary>
+    ```xml
+    {{ nudge_mobileconfig }}```
+</details>
 
 {% capture nudge_mobileconfig_web %}
 {% include_relative resources/nudge-macos-web.mobileconfig %}
 {% endcapture %}
 
-```xml
-{{ nudge_mobileconfig_web }}```
+```filename: nudge-macos-web.mobileconfig```
+
+<details>
+    <summary>Click to expand/collapse codeblock</summary>
+    ```xml
+    {{ nudge_mobileconfig_web }}```
+</details>
 
 ## MacOS 14+ (Sonoma and newer)
 
