@@ -44,6 +44,7 @@ The goals here are simply:
 - Get browsers to update within 24 hours of a release.
 - Have Chrome check every 60 mins to see if there's an update.
 - Use a friendly endpoint for checking (cacheable url).
+- Don't bother users prior to 9:30, so they can get their morning meets done.
 
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
