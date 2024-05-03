@@ -73,6 +73,8 @@ I believe that every org should have a centralised password solution (see: Bitwa
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
 | Password Manager | Never allow the use of password manager | PasswordManagerEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/password_manager) | 
+| Import saved passwords | Disable import of saved passwords | ImportSavedPasswords | [Link](https://admin.google.com/ac/chrome/settings/user/details/import_saved_passwords_category_item) | 
+
 
 ### Other Settings
 
