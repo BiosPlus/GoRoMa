@@ -56,6 +56,15 @@ The goals here are simply:
 | Auto-update check period (minutes) | 60 |  | [Link](https://admin.google.com/ac/chrome/settings/user/details/auto_update_check_period_minutes_field_new) |
 | Cacheable URLs | Attempt to provide cache-friendly download URLs |  | [Link](https://admin.google.com/ac/chrome/settings/user/details/download_preference_field) |
 
+### Import Settings
+
+Right now this pertains to password imports, the password manager isn't working (if you follow the rule a few sections below this) but this is a good step to take anyway.
+
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
+| Import saved passwords | Disable import of saved passwords | ImportSavedPasswords | [Link](https://admin.google.com/ac/chrome/settings/user/details/import_saved_passwords_category_item) | 
+
+
 ### Remote Access
 
 This is in aid of restricting possible avenues for scammers to get into user workstations. I imagine every org has a desired and standard means of conducting remote support.
@@ -73,7 +82,6 @@ I believe that every org should have a centralised password solution (see: Bitwa
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
 | Password Manager | Never allow the use of password manager | PasswordManagerEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/password_manager) | 
-| Import saved passwords | Disable import of saved passwords | ImportSavedPasswords | [Link](https://admin.google.com/ac/chrome/settings/user/details/import_saved_passwords_category_item) | 
 
 
 ### Other Settings
