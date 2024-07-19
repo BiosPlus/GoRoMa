@@ -15,7 +15,7 @@
   },
   "osVersionRequirements": [
     {
-      "requiredMinimumOSVersion": "14.6",
+      "requiredMinimumOSVersion": "latest",
       "activelyExploitedCVEsMajorUpgradeSLA": 7,
       "activelyExploitedCVEsMinorUpdateSLA": 7,
       "nonActivelyExploitedCVEsMajorUpgradeSLA": 14,
