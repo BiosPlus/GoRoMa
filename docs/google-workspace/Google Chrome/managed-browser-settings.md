@@ -4,7 +4,7 @@ title: Managed Browser Settings
 parent: Google Chrome
 grand_parent: Google Workspace
 ---
-# Google Chrome - Managed Browser Settings
+# Managed Browser Settings
 {: .no_toc }
 
 A set of browser configurations which can be managed via the Google Workspace Admin Console (or Group Policy if you're brave enough)

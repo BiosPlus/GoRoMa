@@ -12,8 +12,8 @@ Easy to spin up dynamic groups which will recalcuate membership based on paramet
 
 ---
 
-{: .highlight}
-Always make sure to exclude suspended users. Don't need any bounceback. Though if you want suspended users for some reason, just remove `&& user.suspended == false` from the end of each query
+We always make sure to exclude suspended users. Don't need any bounceback. Though if you want suspended users for some reason, just remove `&& user.suspended == false` from the end of each query
+{: .important}
 
 #### APAC Dynamic Group
 ```sql

@@ -38,7 +38,7 @@ With these properties you'll establish a good and scalable precedent.
 | Property | Convention | Example |
 |---|---|---|
 | Name | `Offboarded User - [User Full Name] (email_prefix) - YYYY-MM-DD` | ***Offboarded User - John Smith (john.smith) - 2023-01-01***
-| Address | `offboarded_[emailprefix]@domain.com` | `offboarded_john.smith@domain.com` |
+| Address | `offboarded_[emailprefix]@domain.tld` | `offboarded_john.smith@domain.tld` |
 | Group Owner | You | |
 | Permissions | Set everything to "Owner" |  |
 
@@ -47,7 +47,7 @@ With these properties you'll establish a good and scalable precedent.
 
 Open terminal and run the following command (substituting `john.smith` with the address of the offboarded user, and `you` with your address (provided you're a workspace administrator))
 ```sh
-gyb --email john.smith@domain.com --action backup --service-account --search smaller:25M
+gyb --email john.smith@domain.tld --action backup --service-account --search smaller:25M
 ```
 
 This will start a backup process which exports each email in the users inbox to .eml format in a nicely structured directory, as well as an SQLite database which keeps track of any relevant attributes.
@@ -57,7 +57,7 @@ This will start a backup process which exports each email in the users inbox to 
 We’re going to take that backup and import it into the aforementioned group with:
 
 ```sh
-gyb  --action restore-group --email offboarded_john.smith@domain.com --use-admin you@domain.com --service-account --local-folder /PATH/TO/BACKUP/DIR
+gyb  --action restore-group --email offboarded_john.smith@domain.tld --use-admin you@domain.tld --service-account --local-folder /PATH/TO/BACKUP/DIR
 ```
 
 This can be a very slow process, about 1 email per 1.5 seconds, can't be helped.
@@ -67,10 +67,16 @@ This can be a very slow process, about 1 email per 1.5 seconds, can't be helped.
 Now we can take a full sized copy of the mailbox.
 
 ```sh
-gyb --email john.smith@domain.com --action backup --service-account
+gyb --email john.smith@domain.tld --action backup --service-account
 ```
 
 ### 5. Zip a copy of that mailbox and throw it into a team/shared drive.
+
+If you would like to speed this process up and save a lot of space, feel free to utilise the ZStandard compression format, just be sure to have `zstd` in your PATH.
+
+```sh
+tar -acvf john.smith.tar.zst GYB-GMail-Backup-john.smith\@domain.tld/
+```
 
 ### 6. Remove yourself as the Owner from the Group Mailbox.
 
@@ -93,7 +99,7 @@ With these properties you'll establish a good and scalable precedent.
 This can be easily done with:
 
 ```sh
-gam user you@domain.com create teamdrive "Offboarded User - John Smith (john.smith) - 2023-01-01" adminmanagedrestrictions true asadmin
+gam user you@domain.tld create teamdrive "Offboarded User - John Smith (john.smith) - 2023-01-01" adminmanagedrestrictions true asadmin
 ```
 {: .important}
 Be sure to grab the Teamdrive ID, it's a string of random characters output after the generation.
@@ -101,7 +107,7 @@ Be sure to grab the Teamdrive ID, it's a string of random characters output afte
 #### Add the offboarded user as a manager.
 
 ```sh
-gam add drivefileacl TEAM_DRIVE_ID_HERE user john.smith@domain.com role organizer
+gam add drivefileacl TEAM_DRIVE_ID_HERE user john.smith@domain.tld role organizer
 ```
 
 ### 2. Move Data from the user ***"My Drive"*** to the ***"Share Drive"***.
@@ -110,7 +116,7 @@ gam add drivefileacl TEAM_DRIVE_ID_HERE user john.smith@domain.com role organize
 This will retain all the document level IDs and sharing settings, though you will lose directory based sharing (a la, if the user shared a whole folder, that access will be lost).
 
 ```sh
-gam user john.smith@domain.com move drivefile root teamdriveparentid TEAM_DRIVE_ID_HERE mergewithparent duplicatefolders merge createshortcutsfornonmovablefiles
+gam user john.smith@domain.tld move drivefile root teamdriveparentid TEAM_DRIVE_ID_HERE mergewithparent duplicatefolders merge createshortcutsfornonmovablefiles
 ```
 
 ### 3. Set access.
