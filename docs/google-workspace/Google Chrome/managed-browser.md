@@ -2,6 +2,7 @@
 layout: default
 title: Managed Browser Settings
 parent: Google Chrome
+grand_parent: Google Workspace
 ---
 # Google Chrome - Managed Browser Settings
 {: .no_toc }
