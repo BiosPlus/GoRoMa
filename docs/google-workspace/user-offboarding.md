@@ -120,4 +120,4 @@ Remove yourself and the user from being drive managers. Add users who will need 
 
 ## Optional reading:
 
-See [troubleshooting (fixing orphaned files)](troubleshooting.md#scenario-fixing-orphaned-files) for a fix to a rare scenario where you're still seeing drive storage quota in use even though the offboardee drive is empty.
+See [troubleshooting (transferring ownership of orphaned files)](troubleshooting.md#scenario-transferring-ownership-of-orphaned-files) for a fix to a rare scenario where you're still seeing drive storage quota in use even though the offboardee drive is empty.

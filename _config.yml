@@ -18,6 +18,12 @@ search:
   rel_url: true
   button: true
 
+# Callouts
+callouts:
+  important:
+    title: Important
+    color: yellow
+
 # Github links
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
