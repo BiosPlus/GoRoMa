@@ -30,6 +30,43 @@ If you're managing a Google Workspace instance/tenancy, you'll want this turned 
 |---|-----|----------|:-:|
 | Managed browser reporting | Enabled managed browser cloud reporting | CloudReportingEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/cloud_reporting) |
 | Managed browser reporting upload frequency | 3 hours | CloudReportingUploadFrequency | [Link](https://admin.google.com/ac/chrome/settings/user/details/cloud_reporting_upload_frequency_category_item) |
+| Event Reporting | Enable event reporting | OnSecurityEventEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnSecurityEventEnterpriseConnector&table-view=false) |
+
+### Chrome Enterprise Connectors
+
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
+| Upload content analysis | [More info to come] | OnFileAttachedEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileAttachedEnterpriseConnector&table-view=false) |
+| Download content analysis | [More info to come] | OnFileDownloadedEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileDownloadedEnterpriseConnector&table-view=false) |
+| Bulk text content analysis | [More info to come] | OnBulkDataEntryEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnBulkDataEntryEnterpriseConnector&table-view=false) |
+| Print content analysis | [More info to come] | OnPrintEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnPrintEnterpriseConnector&table-view=false) |
+| Upload content analysis | Chrome Enterprise Premium | EnterpriseRealTimeUrlCheckMode | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileDownloadedEnterpriseConnector&table-view=false) |
+
+
+
+### Chrome Updates
+
+The goals here are simply:
+- Get browsers to update within 24 hours of a release.
+- Have Chrome check every 300 mins to see if there's an update.
+- Use a friendly endpoint for checking (cacheable url).
+- Don't bother users prior to 9:30, so they can get their morning meets done.
+
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
+| Relaunch notificaiton: Configuration | Show notification recommending relaunch | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
+| Relaunch notificaiton: Time Period (hours) | 48 | RelaunchHeadsUpPeriod | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
+| Relaunch notificaiton: Initial quiet period (hours) | 4 | RelaunchNotification | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
+| Relaunch notificaiton: Relaunch window start time | 00:00 | RelaunchNotificationPeriod | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
+| Relaunch notificaiton: Relaunch window duration (minutes) | 1440 | RelaunchWindow | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
+| Auto-update check period (minutes) | 300 | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/auto_update_check_period_minutes_field_new) |
+| Cacheable URLs | Attempt to provide cache-friendly download URLs | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/download_preference_field) |
+| Google updater policy precedence | Cloud Google Updater policy override platform policy | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/omaha_policy_precedence_category_item) |
+| Supress auto-update check: Start Time | 08:30 | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/updates_suppressed) |
+| Supress auto-update check: Duration (minutes) | 120 | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/updates_suppressed) |
+| Chrome browser updates: Configuration | Allow updates | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/chrome_browser_updates) |
+| Chrome browser updates: Channel | Extended stable channel | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/chrome_browser_updates) |
+
 
 ### Content
 
@@ -39,23 +76,13 @@ Better user experience.
 |---|-----|----------|:-:|
 | Show "Always Open" checkbox in external protocol dialog | User may select "Always allow" to skip all future confirmation prompts | ExternalProtocolDialogShowAlwaysOpenCheckbox | [Link](https://admin.google.com/ac/chrome/settings/user/details/external_protocol_dialog_show_always_open_checkbox_category_item) |
 
-### Chrome Updates
+### Enrollment controls
 
-The goals here are simply:
-- Get browsers to update within 24 hours of a release.
-- Have Chrome check every 60 mins to see if there's an update.
-- Use a friendly endpoint for checking (cacheable url).
-- Don't bother users prior to 9:30, so they can get their morning meets done.
+Populating data about the devices joining your org.
 
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
-| Configuration | Show notification recommending relaunch |  | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
-| Time Period (hours) | 24 | RelaunchHeadsUpPeriod | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
-| Initial quiet period (hours) | 1 | RelaunchNotification | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
-| Relaunch window start time | 09:30 | RelaunchNotificationPeriod | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
-| Relaunch window duration (minutes) | 720 | RelaunchWindow | [Link](https://admin.google.com/ac/chrome/settings/user/details/relaunch_notification_with_duration) |
-| Auto-update check period (minutes) | 60 |  | [Link](https://admin.google.com/ac/chrome/settings/user/details/auto_update_check_period_minutes_field_new) |
-| Cacheable URLs | Attempt to provide cache-friendly download URLs |  | [Link](https://admin.google.com/ac/chrome/settings/user/details/download_preference_field) |
+| Asset identifier during enrollment | Users in this organization can procide asset ID and location during enrollment | ??? | [Link](https://admin.google.com/ac/chrome/settings/user/details/allow_populate_asset_identifier) |
 
 ### Import Settings
 
@@ -84,14 +111,29 @@ I believe that every org should have a centralised password solution (see: Bitwa
 |---|-----|----------|:-:|
 | Password Manager | Never allow the use of password manager | PasswordManagerEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/password_manager) | 
 
+### Sign-In Settings
+
+This is in aid of securing your data and ensuring that users are not syncing things like history or bookmarks or passwords to a personal gmail account.
+
+| Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
+|---|-----|----------|:-:|
+| Browser sign-in settings | Enable browser sign-in | BrowserSignin | [Link](https://admin.google.com/ac/chrome/settings/user/details/browser_signin_category_item) | 
+| Separate profile for managed Google Identity | Force seperate profile and forbit secondary managed accounts | ManagedAccountsSigninRestriction | [Link](https://admin.google.com/ac/chrome/settings/user/details/managed_accounts_signin_restriction_category_item) | 
+| Enterprise profile separation | Enforce profile seperation | ProfileSeparationSettings | [Link](https://admin.google.com/ac/chrome/settings/user/details/profile_separation_settings_setting_group) | 
+| Profile seperation data migration | Suggest to users to bring their existing data in the managed profile and give them a choice not to | ProfileSeparationDataMigrationSettings | [Link](https://admin.google.com/ac/chrome/settings/user/details/profile_separation_data_migration_settings_setting_group) | 
+
 
 ### Other Settings
 
 The logs that are sent are entirely anonymized and are extremely useful for helping the chromium team resolve issues. I believe there is value in turning this on if you're a workspace customer.
+Policy fetching is set to 300 in the event you push a bad config and realise your mistake + want to rollback before anyone gets it.
+Backing up chrome data locally is a general no-no.
 
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
 | Metrics Reporting | Send anonymous reports of usage and crash-related data to Google | MetricsReportingEnabled | [Link](https://admin.google.com/ac/chrome/settings/user/details/metrics_reporting_enabled_category_item) |
+| Policy fetch delay | 300 seconds | MaxInvalidationFetchDelay | [Link](https://admin.google.com/ac/chrome/settings/user/details/max_invalidation_fetch_delay_category_item) |
+| Backup of Google Chrome data | Prevent Google Chrome data from being included in backups | AllowChromeDataInBackups | [Link](https://admin.google.com/ac/chrome/settings/user/details/allow_chrome_data_in_backups_setting_group) |
 
 ### URL Blocking
 
