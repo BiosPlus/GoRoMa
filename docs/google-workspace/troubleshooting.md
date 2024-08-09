@@ -54,7 +54,7 @@ Command 3 (Optional): Remove Jane from the access control of the files.
 This may be a good practice if you don't want to overburden the new user you're transferring file ownership to.
 
 ```sh
-gam csv ownedbyoffboarded.csv gam user "~Owner" delete drivefileacl "~id" offboarding.user@domain.tld
+gam csv ownedbyoffboarded.csv gam user "~Owner" delete drivefileacl "~id" jane.parker@domain.tld
 ```
 
 ### Notes:
