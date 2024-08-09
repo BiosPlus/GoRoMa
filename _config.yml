@@ -22,6 +22,9 @@ search:
 callouts:
   important:
     title: Important
+    color: blue
+  highlight:
+    title: Highlight
     color: yellow
 
 # Github links
