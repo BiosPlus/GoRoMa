@@ -34,23 +34,26 @@ If you're managing a Google Workspace instance/tenancy, you'll want this turned 
 
 ### Chrome Enterprise Connectors
 
+- Hashes are generated for uploaded/downloaded files
+- Huge text pastes are analysed for potential PII exfiltration.
+- Visits to malicious URLs (w/ the red advisory block screen) are logged + graded on severity.
+    - Bypasses of that advisory are logged and reported.
+
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
 | Upload content analysis | [More info to come] | OnFileAttachedEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileAttachedEnterpriseConnector&table-view=false) |
 | Download content analysis | [More info to come] | OnFileDownloadedEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileDownloadedEnterpriseConnector&table-view=false) |
 | Bulk text content analysis | [More info to come] | OnBulkDataEntryEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnBulkDataEntryEnterpriseConnector&table-view=false) |
 | Print content analysis | [More info to come] | OnPrintEnterpriseConnector | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnPrintEnterpriseConnector&table-view=false) |
-| Upload content analysis | Chrome Enterprise Premium | EnterpriseRealTimeUrlCheckMode | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileDownloadedEnterpriseConnector&table-view=false) |
-
-
+| Real time URL check | Chrome Enterprise Premium | EnterpriseRealTimeUrlCheckMode | [Link](https://admin.google.com/ac/chrome/settings/user?ref=browser&f=POLICY_NAME.OnFileDownloadedEnterpriseConnector&table-view=false) |
 
 ### Chrome Updates
 
 The goals here are simply:
-- Get browsers to update within 24 hours of a release.
+- Get browsers to update within 48 hours of a release.
 - Have Chrome check every 300 mins to see if there's an update.
 - Use a friendly endpoint for checking (cacheable url).
-- Don't bother users prior to 9:30, so they can get their morning meets done.
+- Use the extended stable channel for stability and due to the amount of updates the chrome team tend to push a day on the latest channel in comparison (Sometimes several times a day on latest).
 
 | Policy | Setting | Shortcode | <span style="display: inline-block; max-width:100px">URL</span> |
 |---|-----|----------|:-:|
