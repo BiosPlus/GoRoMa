@@ -147,5 +147,5 @@ This section is rather unique since it'll be a list of URLs rather than a single
 
 | URL | Reason |
 |---|---|
-| ```https://remotedesktop.google.com``` | Chromes Remote Desktop service (also needed to get `chromeRemoteDesktopAppBlocked` to equal `true` in the [device trust connector](chrome://connectors-internals/)) |
+| ```https://remotedesktop.google.com``` | Chromes Remote Desktop service (needed to get `chromeRemoteDesktopAppBlocked` to equal `true` in the [device trust connector](chrome://connectors-internals/)) |
 | ```https://remotedesktop.corp.google.com``` | Google Internal(?) Chrome Remote Desktop service (also needed to get `chromeRemoteDesktopAppBlocked` to equal `true` in the [device trust connector](chrome://connectors-internals/)) |
