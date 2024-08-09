@@ -117,3 +117,7 @@ gam user john.smith@domain.com move drivefile root teamdriveparentid TEAM_DRIVE_
 Remove yourself and the user from being drive managers. Add users who will need this data as `contributors` at most, *this sets a good precedent that they should be working in shared/team drives and not hoarding critical docs in their private storage.*
 
 ---
+
+## Optional reading:
+
+See [troubleshooting (fixing orphaned files)](troubleshooting.md#scenario-fixing-orphaned-files) for a fix to a rare scenario where you're still seeing drive storage quota in use even though the offboardee drive is empty.
