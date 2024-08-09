@@ -2,7 +2,7 @@
 layout: default
 title: Troubleshooting
 parent: Google Workspace
-nav_oder: 1
+nav_order: 1
 ---
 
 # Troubleshooting Google Workspace

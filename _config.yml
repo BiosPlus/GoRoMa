@@ -26,6 +26,9 @@ callouts:
   highlight:
     title: Highlight
     color: yellow
+  warning:
+    title: Warning
+    color: red
 
 # Github links
 gh_edit_link: true # show or hide edit this page link
