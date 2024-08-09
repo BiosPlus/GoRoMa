@@ -47,8 +47,6 @@ gam all users show filelist corpora user showownedby others fullquery "'jane.par
 #### Command 2: Itterate through the CSV, reassigning ownership of the corresponding file to the parent owner of the My Drive. 
 {: .no_toc }
 
-
-{: .highlight}
 This will relegate Jane to Editor permission of the affected files, and still show the files in the "Shared to me" section on the drive website. Quota usage for each file will be reassigned to the owner of the My Drive.
 
 ```sh
@@ -58,7 +56,6 @@ gam csv ownedbyoffboarded.csv gam user jane.parker@domain.tld transfer ownership
 #### Command 3 (Optional): Remove Jane from the access control of the files.
 {: .no_toc }
 
-{: .highlight}
 This may be a good practice if you don't want to overburden the new user you're transferring file ownership to.
 
 ```sh
@@ -66,10 +63,9 @@ gam csv ownedbyoffboarded.csv gam user "~Owner" delete drivefileacl "~id" jane.p
 ```
 
 ### Notes
-{: .no_toc }
-
 - This process will not affect the permisions of files still present in Janes 'My Drive'.
 - If a folder ID is generated/supplied to the CSV in the first command, the folder will be recusrively scanned through in the second command to find any files that fit this ownership scenario/criteria. Again, this will not affect files where Jane is not already the owner coming into the scenario..
+{: .highlight }
 
 ---
 
