@@ -63,10 +63,10 @@ This may be a good practice if you don't want to overburden the new user you're 
 gam csv ownedbyoffboarded.csv gam user "~Owner" delete drivefileacl "~id" jane.parker@domain.tld
 ```
 
-### Notes
+### Notes:
+{: .no_toc }
 - This process will not affect the permisions of files still present in Janes 'My Drive'.
 - If a folder ID is generated/supplied to the CSV in the first command, the folder will be recusrively scanned through in the second command to find any files that fit this ownership scenario/criteria. Again, this will not affect files where Jane is not already the owner coming into the scenario..
-{: .highlight }
 
 ---
 
