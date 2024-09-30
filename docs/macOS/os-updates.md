@@ -26,21 +26,9 @@ The best approach to combat this is to use Nudge.
 
 This works on the basis that you deploy a mobileconfig file macs with a full configuration. I apologise, I'd make this a collapsed section but it totally breaks the formatting.
 
-```xml
-{% include_relative docs/resources/macOS/Nudge/nudge-macos.mobileconfig %}
-```
-
 ### Option Two: The web based Nudge configuration.
 
 This works on the basis that you deploy a mobileconfig file macs telling them where the actual configuration source is hosted. In this case, on github as a raw file.
-
-```xml
-{% include_relative docs/resources/macOS/Nudge/nudge-macos-web.mobileconfig %}
-```
-
-```json
-{% include_relative docs/resources/macOS/Nudge/nudge-macos-web.json %}
-```
 
 ## MacOS 14+ (Sonoma and newer)
 
