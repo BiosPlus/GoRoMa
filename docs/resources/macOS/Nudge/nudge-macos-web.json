@@ -15,13 +15,8 @@
   },
   "osVersionRequirements": [
     {
-      "requiredMinimumOSVersion": "latest",
-      "activelyExploitedCVEsMajorUpgradeSLA": 7,
-      "activelyExploitedCVEsMinorUpdateSLA": 7,
-      "nonActivelyExploitedCVEsMajorUpgradeSLA": 14,
-      "nonActivelyExploitedCVEsMinorUpdateSLA": 14,
-      "standardMajorUpgradeSLA": 14,
-      "standardMinorupdateSLA": 14,
+      "requiredMinimumOSVersion": "15.2",
+      "requiredInstallationDate": "2024-10-14T18:00:01Z",
       "unsupportedURL": "https://support.apple.com/unsupported",
       "unsupportedURLs": [
         {
