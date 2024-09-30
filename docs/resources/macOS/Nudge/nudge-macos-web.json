@@ -15,7 +15,7 @@
   },
   "osVersionRequirements": [
     {
-      "requiredMinimumOSVersion": "15.2",
+      "requiredMinimumOSVersion": "15.0",
       "requiredInstallationDate": "2024-10-14T18:00:01Z",
       "unsupportedURL": "https://support.apple.com/unsupported",
       "unsupportedURLs": [
