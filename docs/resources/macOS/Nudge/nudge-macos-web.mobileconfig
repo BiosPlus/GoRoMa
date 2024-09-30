@@ -6,7 +6,7 @@
 		<array>
 			<dict>
 				<key>json-url</key>
-				<string>https://raw.githubusercontent.com/BiosPlus/GoRoMa/main/docs/macOS/resources/com.github.macadmins.Nudge.json</string>
+				<string>https://goroma.jonblack.gg/docs/resources/macOS/Nudge/nudge-macos-web.json</string>
 				<key>PayloadDisplayName</key>
 				<string>Nudge - Web Based Configuration</string>
 				<key>PayloadIdentifier</key>

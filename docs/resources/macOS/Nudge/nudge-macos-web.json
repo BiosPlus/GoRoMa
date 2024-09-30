@@ -1,0 +1,81 @@
+{
+  "optionalFeatures": {
+    "acceptableCameraUsage": true,
+    "acceptableScreenSharingUsage": true,
+    "acceptableUpdatePreparingUsage": true,
+    "aggressiveUserExperience": true,
+    "aggressiveUserFullScreenExperience": true,
+    "asynchronousSoftwareUpdate": true,
+    "attemptToCheckForSupportedDevice": true,
+    "attemptToFetchMajorUpgrade": true,
+    "disableNudgeForStandardInstalls": false,
+    "enforceMinorUpdates": true,
+    "refreshSOFAFeedTime": 86400,
+    "utilizeSOFAFeed": true
+  },
+  "osVersionRequirements": [
+    {
+      "requiredMinimumOSVersion": "latest",
+      "activelyExploitedCVEsMajorUpgradeSLA": 7,
+      "activelyExploitedCVEsMinorUpdateSLA": 7,
+      "nonActivelyExploitedCVEsMajorUpgradeSLA": 14,
+      "nonActivelyExploitedCVEsMinorUpdateSLA": 14,
+      "standardMajorUpgradeSLA": 14,
+      "standardMinorupdateSLA": 14,
+      "unsupportedURL": "https://support.apple.com/unsupported",
+      "unsupportedURLs": [
+        {
+          "_language": "en",
+          "unsupportedURL": "https://support.apple.com/unsupported-en"
+        }
+      ]
+    }
+  ],
+  "userExperience": {
+    "allowMovableWindow": true,
+    "allowGracePeriods": false,
+    "allowedDeferrals": 20,
+    "allowedDeferralsUntilForcedSecondaryQuitButton": 5,
+    "approachingRefreshCycle": 6000,
+    "approachingWindowTime": 72,
+    "elapsedRefreshCycle": 300,
+    "gracePeriodInstallDelay": 23,
+    "gracePeriodLaunchDelay": 1,
+    "gracePeriodPath": "/private/var/db/.AppleSetupDone",
+    "imminentRefreshCycle": 600,
+    "imminentWindowTime": 24,
+    "initialRefreshCycle": 18000,
+    "noTimers": false,
+    "randomDelay": false
+  },
+  "userInterface": {
+    "fallbackLanguage": "en",
+    "forceFallbackLanguage": true,
+    "forceScreenShotIcon": false,
+    "iconDarkPath": "https://goroma.jonblack.gg/docs/resources/Icons/apple-box.png",
+    "iconLightPath": "https://goroma.jonblack.gg/docs/resources/Icons/apple-box.png",
+    "showDeferralCount": true,
+    "showDaysRemainingToUpdate": true,
+    "showRequiredUpdate": true,
+    "requiredInstallationDisplayFormat": "dd/MM/yyyy",
+    "simpleMode": false,
+    "singleQuitButton": true,
+    "updateElements": [
+      {
+        "_language": "en",
+        "actionButtonText": "Update Device",
+        "informationButtonText": "More Info",
+        "mainContentHeader": "Your device will restart during this update",
+        "mainContentNote": "**Important Notes**",
+        "mainContentSubHeader": "Updates can take around 15-25 minutes to complete.",
+        "mainContentText": "A fully up-to-date device is required to ensure that we can protect our data.\n\nIf you do not update by the due date, you will effectively be locked out of your system until you complete the update.\n\nWhile the update has been rigorously tested it's advised you do this as soon as possible to avoid any downtime, as well as help us find any issues early on with the update.\n\nTo begin the update, simply click on the Update Device button and follow the prompts.\n\nFor more information, hit *More Info* in the bottom left corner of this window.",
+        "mainHeader": "Your device requires a macOS Security Update",
+        "primaryQuitButtonText": "Later",
+        "secondaryQuitButtonText": "I understand",
+        "subHeader": "A friendly reminder from your tech team",
+        "customDeferralButtonText": "Choose a date/time",
+        "customDeferralDropdownText": "Remind me in:"
+      }
+    ]
+  }
+}
